@@ -32,7 +32,7 @@ def front_back(a, b):
         paac = a[c:]
         pabc = b[d + 1:]
         return f'{paa}{pab}{paac}{pabc}'
-    
+
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
