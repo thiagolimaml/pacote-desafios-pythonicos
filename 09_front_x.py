@@ -12,8 +12,19 @@ antes de combina-las.
 """
 
 def front_x(words):
+    lista_x = list()
+    lista_ou = list()
+    lista = list()
     # +++ SUA SOLUÇÃO +++
-    return
+    for v in words:
+        if v[0] in 'x':
+            lista_x.append(v)
+        else:
+            lista_ou.append(v)
+    lista_x.sort()
+    lista_ou.sort()
+    lista = lista_x + lista_ou
+    return lista
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
