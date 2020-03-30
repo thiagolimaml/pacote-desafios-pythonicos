@@ -12,8 +12,27 @@ a-frente + b-frente + a-trás + b-trás
 """
 def front_back(a, b):
     # +++ SUA SOLUÇÃO +++
-    return
-
+    c = len(a) // 2
+    d = len(b) // 2
+    if len(a) % 2 == 0 and len(b) % 2 == 0:
+        paa = a[:c]
+        pab = b[:d]
+        paac = a[c:]
+        pabc = b[d:]
+        return f'{paa}{pab}{paac}{pabc}'
+    if len(a) % 2 == 1 and len(b) % 2 == 1:
+        paa = a[:c + 1]
+        pab = b[:d + 1]
+        paac = a[c + 1:]
+        pabc = b[d + 1:]
+        return f'{paa}{pab}{paac}{pabc}'
+    if len(a) % 2 == 0 and len(b) % 2 == 1:
+        paa = a[:c]
+        pab = b[:d + 1]
+        paac = a[c:]
+        pabc = b[d + 1:]
+        return f'{paa}{pab}{paac}{pabc}'
+    
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
